@@ -43,12 +43,12 @@ jobs:
 
     - name: Push changes to team1 repository
       env:
-        PAT: ${{ secrets.CLASSIC_PAT }}
+        GITHUB_TOKEN: ${{ secrets.CLASSIC_PAT }}
       run: |
         git push team1 main || echo "Push to team1 failed, check permissions or PAT scopes."
 
     - name: Push changes to team2 repository
       env:
-        PAT: ${{ secrets.CLASSIC_PAT }}
+        GITHUB_TOKEN: ${{ secrets.CLASSIC_PAT }}
       run: |
         git push team2 main || echo "Push to team2 failed, check permissions or PAT scopes."
