@@ -6,6 +6,6 @@ def sub(a,b):
     return a-b
 
 
-def multi(a,b,c):
-    return a*b*c
+def multi(a,b,c,d):
+    return a*b*c*d
     
